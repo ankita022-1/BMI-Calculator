@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h3 class="h_primary_class" id="h-id1">
+            <p>BMI CALCULATOR</p>
+        </h3>
+        <div class="h_primary_class" id="h-id2">
+            <span>
+                Body Mass Index (BMI) is a person’s weight in kilograms divided by the square of height in meters.
+                A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health
+                problems, but it does not diagnose the body fatness or health of an individual.
+                Learn more about it <a href="https://www.cdc.gov/healthyweight/assessing/bmi/index.html"
+                    target="blank">click here</a>
+            </span>
+
+        </div>
+    </header>
+    <!-- section  -->
+    <section id="section">
+        <!---------------------------------------- box1----------------------------------- -->
+        <div id="box1" class="s_primary_class">
+            <h4>UNIT TYPES</h4>
+            <div id="unit">
+                <input type="radio" id="metric_unit" name="units" onclick="func1()" checked><label
+                    for="metric_unit">Metric Units</label>
+                <input type="radio" id="uk/us_unit" name="units" onclick="func2()"><label for="uk/us_unit">US/UK
+                    Units</label>
+            </div>
+        </div>
+        <form action="#">
+            <!----------------------------------------- box2 (height)----------------------------------- -->
+            <div id="box2" class="s_primary_class">
+                <h3>Height</h3>
+                <!-- height in centemeters -->
+                <div id="box2_cm">
+                    <input type="number" name="height_cm_value" id="height_cm" placeholder="centimeters" required>
+                    <h3>cm</h3>
+                </div>
+                <!-- height in feet -->
+
+                <div id="box2_ft">
+                    <input type="number" id="height_ft" name="height_ft_value" placeholder="feet" required>
+                    <h3>ft</h3>
+                </div>
+                <div id="box2_in">
+                    <input type="number" id="height_in" name="height_in_value" placeholder="inches" required>
+                    <h3>in</h3>
+                </div>
+            </div>
+            <!----------------------------------------- box3 (weight)----------------------------------- -->
+            <div id="box3" class="s_primary_class">
+                <h3>weight</h3>
+                <div>
+                    <input type="number" id="weight" placeholder="kilograms" required>
+                    <h3 id="weight_unit">kg</h3>
+                </div>
+            </div>
+            <!----------------------------------------- box4----------------------------------- -->
+            <div id="box4" class="s_primary_class">
+                <input id="submit" type="submit" onclick="Submit()" value="Calculate">
+                <input type="reset" value="Reset" onclick="reset()">
+
+            </div>
+        <!----------------------------------------- box5----------------------------------- -->
+        <div id="box5" class="s_primary_class">
+            <!-- container1 -->
+            <div id="container1" class="c1_primary_class">
+                <h3>BMI</h3>
+                <div>
+                    <input id="bmi_value" placeholder="">
+                    <h4>kg/m&sup2;</h4>
+                </div>
+            </div>
+            <!-- container2 -->
+            <div id="container2" class="c1_primary_class">
+                <h3>BMI &#8203; category</h3>
+                <div>
+                    <input id="bmi_category" placeholder="">
+                </div>
+            </div>
+            <!-- container3 -->
+            <div id="container3" class="c1_primary_class">
+                <h3>Health &#8203; risk</h3>
+                <div>
+                    <input id="healthRisk" placeholder="">
+                </div>
+            </div>
+        </div>
+
+        <!-- </form> -->
+
+    </section>
+    <!-- footer -->
+    <footer>
+        &copy copyright www.bmicalculator.com ! All Rights Reserved
+    </footer>
+    
+    <script src="/index.js"></script>
+</body>
+
+</html>
