@@ -7,13 +7,13 @@
 
 /*----------------------------------------------------- header ----------------------------------------------*/
 header {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 140px;
     width: 100%;
 }
 
 .h_primary_class {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 60%;
     padding: 5px;
     display: flex;
@@ -35,7 +35,7 @@ header {
 
 /*----------------------------------------------------- section ----------------------------------------------*/
 .s_primary_class {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 74px;
     width: 38%;
     display: flex;
@@ -58,7 +58,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 2px;
     padding: 3px;
     margin: 4px;
@@ -126,7 +126,7 @@ header {
     font-size: 16px;
     padding: 0px 16px;
     border-radius: 7px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #box4 input:hover {
